@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>H-scope</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  </head>
+
+  <body>
+    <div class="splash">
+      <h1 class="fade-in">Horoscope Generator</h1>
+    </div>
+    <button onclick="backButton()">Back</button>
+    <div class="mainmenu">
+      <img />
+      <button id="Horoscope" onclick="toHoroscope()">Horoscope</button>
+      <button onclick="toTarrot()">Tarot Reading</button>
+      <label for="sign"></label>
+      <select name="sign" id="sign">
+        <option value="aquarius">aquarius</option>
+        <option value="pisces">pisces</option>
+        <option value="aries">aries</option>
+        <option value="taurus">taurus</option>
+        <option value="gemini">gemini</option>
+        <option value="cancer">cancer</option>
+        <option value="leo">leo</option>
+        <option value="vigro">vigro</option>
+        <option value="libra">libra</option>
+        <option value="scorpio">scorpio</option>
+        <option value="sagittarius">sagittarius</option>
+        <option value="capricorn">capricorn</option>
+      </select>
+    </div>
+
+    <div class="horoscope display-none">
+      <p id="p1"></p>
+      <p id="preds"></p>
+    </div>
+
+    <div class="tarrot display-none">
+      <p>Tarort</p>
+    </div>
+  </body>
+
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+  ></script>
+
+  <script src="app.js"></script>
+  <script src="predictions.js"></script>
+</html>

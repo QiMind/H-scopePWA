@@ -1,0 +1,24 @@
+{
+  "name": "h-scopepwa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "firebase.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "firebase.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QiMind/H-scopePWA.git"
+  },
+  "author": "Andrei Cristiana / Nae Sebastian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QiMind/H-scopePWA/issues"
+  },
+  "homepage": "https://github.com/QiMind/H-scopePWA#readme",
+  "dependencies": {
+    "firebase": "^8.2.9",
+    "firebase-admin": "^9.5.0"
+  }
+}
