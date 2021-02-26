@@ -22,7 +22,7 @@
     <div class="mainmenu">
       <img />
       <button id="Horoscope" onclick="toHoroscope()">Horoscope</button>
-      <button onclick="toTarrot()">Tarot Reading</button>
+      <button id ="Tarot" onclick="toTarrot()">Tarot Reading</button>
       <label for="sign"></label>
       <select name="sign" id="sign">
         <option value="aquarius">aquarius</option>
@@ -46,7 +46,20 @@
     </div>
 
     <div class="tarrot display-none">
-      <p>Tarort</p>
+      <p>Tarot Reading</p>
+      <img id = "cardPic"/>
+      <p id="cardName"></p>
+      <b>Today's Reading</b>
+      <p id = "fortuneTelling"></p>
+      <b>Light Meaning</b>
+      <p id = "lightMeaning"></p>
+      <b>Shadow Meaning</b>
+      <p id = "shadowMeaning"></p>
+      <b>Question To ask</b>
+      <p id = "question"></p>
+      
+
+
     </div>
   </body>
 
@@ -68,4 +81,6 @@
 
   <script src="app.js"></script>
   <script src="predictions.js"></script>
+  <script src="tarot.js"></script>
+
 </html>
