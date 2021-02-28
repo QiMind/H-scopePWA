@@ -9,7 +9,7 @@ function tarotReading(){
     var question = document.getElementById("question");
 
 
-    fetch('tarot-deck.json',{
+    fetch('js/tarot-deck.json',{
         method: 'GET',
         headers: {
           'Content-Type': 'application/json'

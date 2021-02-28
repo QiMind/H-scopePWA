@@ -1,7 +1,7 @@
 function preds(){
 var preds = document.getElementById('preds');
 var data;
-fetch('data.json',{
+fetch('/js/data.json',{
     method: 'GET',
     headers: {
       'Content-Type': 'application/json'

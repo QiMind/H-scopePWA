@@ -12,55 +12,81 @@
       crossorigin="anonymous"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
   <body>
     <div class="splash">
-      <h1 class="fade-in">Horoscope Generator</h1>
-    </div>
-    <button onclick="backButton()">Back</button>
-    <div class="mainmenu">
-      <img />
-      <button id="Horoscope" onclick="toHoroscope()">Horoscope</button>
-      <button id ="Tarot" onclick="toTarrot()">Tarot Reading</button>
-      <label for="sign"></label>
-      <select name="sign" id="sign">
-        <option value="aquarius">aquarius</option>
-        <option value="pisces">pisces</option>
-        <option value="aries">aries</option>
-        <option value="taurus">taurus</option>
-        <option value="gemini">gemini</option>
-        <option value="cancer">cancer</option>
-        <option value="leo">leo</option>
-        <option value="vigro">vigro</option>
-        <option value="libra">libra</option>
-        <option value="scorpio">scorpio</option>
-        <option value="sagittarius">sagittarius</option>
-        <option value="capricorn">capricorn</option>
-      </select>
+      <div class="container">
+        <h1 class="fade-in">Horoscope Generator</h1>
+      </div>
+      <div class="container">
+        <img />
+      </div>
     </div>
 
-    <div class="horoscope display-none">
-      <p id="p1"></p>
-      <p id="preds"></p>
+    <div class="container">
+      <div class="row">
+        <button onclick="backButton()">Back</button>
+      </div>
     </div>
 
-    <div class="tarrot display-none">
-      <p>Tarot Reading</p>
-      <img id = "cardPic"/>
-      <p id="cardName"></p>
-      <b>Today's Reading</b>
-      <p id = "fortuneTelling"></p>
-      <b>Light Meaning</b>
-      <p id = "lightMeaning"></p>
-      <b>Shadow Meaning</b>
-      <p id = "shadowMeaning"></p>
-      <b>Question To ask</b>
-      <p id = "question"></p>
-      
-
-
+    <div class="container mainmenu">
+      <div class="row">
+        <img />
+      </div>
+      <div class="row">
+        <div class="col">
+          <button id="Horoscope" onclick="toHoroscope()">Horoscope</button>
+        </div>
+        <div class="col">
+          <button id ="Tarot" onclick="toTarrot()">Tarot Reading</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label for="sign"></label>
+          <select name="sign" id="sign">
+            <option value="aquarius">aquarius</option>
+            <option value="pisces">pisces</option>
+            <option value="aries">aries</option>
+            <option value="taurus">taurus</option>
+            <option value="gemini">gemini</option>
+            <option value="cancer">cancer</option>
+            <option value="leo">leo</option>
+            <option value="vigro">vigro</option>
+            <option value="libra">libra</option>
+            <option value="scorpio">scorpio</option>
+            <option value="sagittarius">sagittarius</option>
+            <option value="capricorn">capricorn</option>
+          </select>
+        </div>
+      </div>
     </div>
+
+    <div class="container">
+      <div class="horoscope display-none">
+        <p id="p1"></p>
+        <p id="preds"></p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="tarrot display-none">
+        <p>Tarot Reading</p>
+        <img id = "cardPic"/>
+        <p id="cardName"></p>
+        <b>Today's Reading</b>
+        <p id = "fortuneTelling"></p>
+        <b>Light Meaning</b>
+        <p id = "lightMeaning"></p>
+        <b>Shadow Meaning</b>
+        <p id = "shadowMeaning"></p>
+        <b>Question To ask</b>
+        <p id = "question"></p>
+      </div>
+    </div>
+
   </body>
 
   <script
@@ -80,7 +106,7 @@
   ></script>
 
   <script src="app.js"></script>
-  <script src="predictions.js"></script>
-  <script src="tarot.js"></script>
+  <script src="js/predictions.js"></script>
+  <script src="js/tarot.js"></script>
 
 </html>
