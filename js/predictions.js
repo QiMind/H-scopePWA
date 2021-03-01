@@ -7,6 +7,7 @@ fetch('/js/data.json',{
       'Content-Type': 'application/json'
     }
   }).then(result => result.json()).then(result => {
+    
     var out = "";
     var rng = Math.floor(Math.random() * 100) + 1;
 
