@@ -1,5 +1,5 @@
-const staticHScope = "HScope-v1"
-const assets = [
+var staticHScope = "HScope-v1";
+var assets = [
   "/",
   "/index.html",
   "/css/style.css",
@@ -9,20 +9,20 @@ const assets = [
   "/js/predictions.js",
   "/js/tarot.js",
   "/js/tarot-deck.json",
-]
+];
 
-self.addEventListener("install", installEvent => {
+self.addEventListener('install', installEvent => {
   installEvent.waitUntil(
     caches.open(staticHScope).then(cache => {
-      //cache.addAll(assets)
+      cache.addAll(assets);
     })
-  )
-})
+  );
+});
 
-self.addEventListener("fetch", fetchEvent => {
+self.addEventListener('fetch', fetchEvent => {
     fetchEvent.respondWith(
       caches.match(fetchEvent.request).then(res => {
-        return res || fetch(fetchEvent.request)
+        return res || fetch(fetchEvent.request);
       })
-    )
-  })
+    );
+  });
