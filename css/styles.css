@@ -1,4 +1,16 @@
-
+.home{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 100%;
+}
+html, body {
+    height: 100%;
+    background-color: black;
+  }
+  body {
+    display: flex;
+  }
 .splash{
     position: fixed;
     top: 0;
@@ -34,6 +46,8 @@
     }
 }
 
+
+
 .fade-in{
     opacity: 0;
     animation: fadeIn 1s ease-in forwards;
@@ -43,9 +57,99 @@
 .mainmenu{
     background: black;
     color: white;
+    height: 100%;
 }
 
+.mainmenu img{
+    width: 800px;
+    height: 800px;
+    margin-left: -35px;
+    margin-bottom: 80px;
+}
 
+.sign{
+    margin-left: 300px;
+    margin-top: 180px;
+
+}
+
+select{
+    background-color: black;
+    color: white;
+    border:none;
+    font-size: 40px;
+    width: 100px;
+}
+
+.backbtn{
+    color:#DFC681;
+    background-color: black;
+    outline: none;
+    border:none;
+    height:80px;
+    width: 80px;
+    font-size: 100px;
+    margin-left: -80px;
+    margin-top: 20px;
+
+}
+
+.mainmenu .btn{
+
+        width: 260px;
+        height: 55px;
+        font-size: 22px;
+        display: block;
+        margin: 30px auto;
+        padding: 10px;
+      
+        overflow: hidden;
+    
+        outline: none;
+        border-radius: 26px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+        
+        transition: background-color .3s;
+        font-family:'Raleway', sans-serif;
+        font-weight: bold;
+        border: 2px solid #DFC681;
+        background-color: black;
+        color: #DFC681;
+     
+     
+        
+        
+      
+}
+
+.mainmenu.btn:before{
+    
+        content: "";
+        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        
+        display: block;
+        width: 0;
+        padding-top: 0;
+          
+        border-radius: 100%;
+        
+        background-color: rgba(236, 240, 241, .3);
+        
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+      
+  
+
+.mainmenu.btn:hover{
+    color: white;
+}
 
 .mainmenu.display-none{
     background: black;

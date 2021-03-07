@@ -11,6 +11,9 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   </head>
 
@@ -18,26 +21,53 @@
     <div class="splash">
       <h1 class="fade-in">Horoscope Generator</h1>
     </div>
-    <button onclick="backButton()">Back</button>
+    
+
+   <div class="home">
     <div class="mainmenu">
-      <img />
-      <button id="Horoscope" onclick="toHoroscope()">Horoscope</button>
-      <button id ="Tarot" onclick="toTarrot()">Tarot Reading</button>
-      <label for="sign"></label>
-      <select name="sign" id="sign">
-        <option value="aquarius">aquarius</option>
-        <option value="pisces">pisces</option>
-        <option value="aries">aries</option>
-        <option value="taurus">taurus</option>
-        <option value="gemini">gemini</option>
-        <option value="cancer">cancer</option>
-        <option value="leo">leo</option>
-        <option value="vigro">vigro</option>
-        <option value="libra">libra</option>
-        <option value="scorpio">scorpio</option>
-        <option value="sagittarius">sagittarius</option>
-        <option value="capricorn">capricorn</option>
-      </select>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <button class="backbtn" onclick="backButton()">&larr;</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <img src="images/cards/start_screen_pic.png"/>
+          </div>
+        </div>
+     
+        <div class="row">
+          <div class="col-md-6">
+            <button class="btn" id="Horoscope" onclick="toHoroscope()">HOROSCOPE</button>
+          </div>
+          <div class="col-md-6">
+            <button class="btn" id ="Tarot" onclick="toTarrot()">TAROT READING</button>
+        
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <label for="sign"></label>
+            <select name="sign" id="sign" class="sign">
+              <option value="aquarius">Aquarius</option>
+              <option value="pisces">Pisces</option>
+              <option value="aries">Aries</option>
+              <option value="taurus">Taurus</option>
+              <option value="gemini">Gemini</option>
+              <option value="cancer">Cancer</option>
+              <option value="leo">Leo</option>
+              <option value="vigro">Vigro</option>
+              <option value="libra">Libra</option>
+              <option value="scorpio">Scorpio</option>
+              <option value="sagittarius">Sagittarius</option>
+              <option value="capricorn">Capricorn</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      
+     
     </div>
 
     <div class="horoscope display-none">
@@ -61,6 +91,7 @@
 
 
     </div>
+  </div>
   </body>
 
   <script
@@ -82,5 +113,6 @@
   <script src="app.js"></script>
   <script src="predictions.js"></script>
   <script src="tarot.js"></script>
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 
 </html>
