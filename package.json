@@ -20,5 +20,8 @@
   "dependencies": {
     "firebase": "^8.2.9",
     "firebase-admin": "^9.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.32"
   }
 }
