@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="manifest" href="manifest.json" />
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="images/icons/icon-72x72.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-96x96.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-128x128.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-144x144.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-152x152.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-192x192.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-384x384.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-512x512.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
+    <meta name="theme-color" content="#db4938" />
+
     <meta charset="utf-8" />
     <title>H-scope</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
@@ -15,13 +28,19 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css"
+    />
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   </head>
 
-  <body>
-    <div class="splash">
-      <h1 class="fade-in">Horoscope Generator</h1>
-    </div>
-    
+  
 
    <div class="home">
     <div class="mainmenu">
@@ -68,28 +87,91 @@
       </div>
       
      
+      <div class="container">
+        <h1 class="fade-in">Horoscope Generator</h1>
+      </div>
+      <div class="container">
+        <img />
+      </div>
     </div>
 
-    <div class="horoscope display-none">
-      <p id="p1"></p>
-      <p id="preds"></p>
+    <div class="container">
+      <div class="row">
+        <button
+          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+          onclick="backButton()"
+        >
+          
+        </button>
+      </div>
     </div>
 
-    <div class="tarrot display-none">
-      <p>Tarot Reading</p>
-      <img id = "cardPic"/>
-      <p id="cardName"></p>
-      <b>Today's Reading</b>
-      <p id = "fortuneTelling"></p>
-      <b>Light Meaning</b>
-      <p id = "lightMeaning"></p>
-      <b>Shadow Meaning</b>
-      <p id = "shadowMeaning"></p>
-      <b>Question To ask</b>
-      <p id = "question"></p>
-      
+    <div class="container mainmenu">
+      <div class="row">
+        <img />
+      </div>
+      <div class="row">
+        <div class="col">
+          <button
+            class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+            id="Horoscope"
+            onclick="toHoroscope()"
+          >
+            Horoscope
+          </button>
+        </div>
+        <div class="col">
+          <button
+            class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+            id="Tarot"
+            onclick="toTarrot()"
+          >
+            Tarot Reading
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col mdl-selectfield mdl-js-selectfield">
+          <label for="sign"></label>
+          <select name="sign" id="sign" class="mdl-selectfield__select">
+            <option value="aquarius">aquarius</option>
+            <option value="pisces">pisces</option>
+            <option value="aries">aries</option>
+            <option value="taurus">taurus</option>
+            <option value="gemini">gemini</option>
+            <option value="cancer">cancer</option>
+            <option value="leo">leo</option>
+            <option value="vigro">vigro</option>
+            <option value="libra">libra</option>
+            <option value="scorpio">scorpio</option>
+            <option value="sagittarius">sagittarius</option>
+            <option value="capricorn">capricorn</option>
+          </select>
+        </div>
+      </div>
+    </div>
 
+    <div class="container">
+      <div class="horoscope display-none">
+        <p id="p1"></p>
+        <p id="preds"></p>
+      </div>
+    </div>
 
+    <div class="container">
+      <div class="tarrot display-none">
+        <p>Tarot Reading</p>
+        <img id="cardPic" />
+        <p id="cardName"></p>
+        <b>Today's Reading</b>
+        <p id="fortuneTelling"></p>
+        <b>Light Meaning</b>
+        <p id="lightMeaning"></p>
+        <b>Shadow Meaning</b>
+        <p id="shadowMeaning"></p>
+        <b>Question To ask</b>
+        <p id="question"></p>
+      </div>
     </div>
   </div>
   </body>
@@ -111,8 +193,8 @@
   ></script>
 
   <script src="app.js"></script>
-  <script src="predictions.js"></script>
-  <script src="tarot.js"></script>
   <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 
+  <script src="js/predictions.js"></script>
+  <script src="js/tarot.js"></script>
 </html>

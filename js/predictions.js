@@ -1,12 +1,13 @@
 function preds(){
 var preds = document.getElementById('preds');
 var data;
-fetch('data.json',{
+fetch('/js/data.json',{
     method: 'GET',
     headers: {
       'Content-Type': 'application/json'
     }
   }).then(result => result.json()).then(result => {
+    
     var out = "";
     var rng = Math.floor(Math.random() * 100) + 1;
 
