@@ -46,3 +46,5 @@ function mainMenu()
 {
     sign_array = ['aquarius','pisces','aries','taurus','gemini','cancer','leo','vigro','libra','scorpio','saggittarius','capricorn'];
 }
+
+//Added nothing just wanted
